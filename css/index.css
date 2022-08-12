@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+body {
+  margin: 40px 50px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+.nav-item {
+  display: inline-block;
+  padding: 0px 30px;
+}
+.nav-items {
+  margin-left: 100px;
+}
+
+.active-item {
+  color: #fd582f;
+}
+
+.intro-section {
+  display: flex;
+}
+.left-section {
+  padding-top: 40px;
+}
+
+.left-section h3 {
+  font-size: 25px;
+}
+.left-section h1 {
+  font-size: 60px;
+  font-family: "Fredoka one";
+  font-weight: 400;
+}
+.sub-headlines {
+  padding-top: 10px;
+  padding-left: 70px;
+}
+
+.sub-headline {
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+.sub-headline img {
+  background-color: #fd582f;
+  border-radius: 20px;
+}
+.text {
+  padding-top: 30px;
+  margin-right: 100px;
+  font-size: 15px;
+}
+button {
+  margin-top: 30px;
+  padding: 10px 30px;
+  border-radius: 30px;
+  background-color: #fd582f;
+  color: #ffffff;
+  font-weight: 500;
+  border: none;
+}
+
+.rigtht-section {
+  position: relative;
+}
+.discount,
+.discount-content {
+  position: absolute;
+}
+.headphone-div :nth-child(3) {
+  height: 350px;
+  margin-right: 150px;
+}
+
+.discount {
+  height: 130px;
+  top: 380px;
+  right: 440px;
+}
+
+.discount-content {
+  top: 415px;
+  right: 470px;
+}
+.discount-content h1 {
+  font-family: "fredoka one ";
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 35px;
+}
+.discount-content h4 {
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.dots {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+
+  bottom: 120px;
+  right: 330px;
+  gap: 20px;
+}
+.dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+}
+
+.yellow-dot {
+  content: linear-gradient(#fbd104, #fbd104);
+}
+
+.tomato-dot {
+  content: linear-gradient(#fe5e35, #fe5e35);
+}
+
+.black-dot {
+  content: linear-gradient(#000000, #000000);
+}
+.right-section button {
+  position: absolute;
+  bottom: 0px;
+  right: 307px;
+  margin-bottom: 40px;
+}
