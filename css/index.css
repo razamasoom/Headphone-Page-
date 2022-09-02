@@ -1,137 +1,212 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: "Poppins";
 }
+
 body {
-  margin: 40px 50px;
+  margin: 50px 50px;
 }
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 50px;
 }
 
-.nav-item {
-  display: inline-block;
-  padding: 0px 30px;
-}
 .nav-items {
-  margin-left: 100px;
+  flex: 90;
+  display: flex;
+
+  justify-content: center;
+  gap: 60px;
+
+  font-size: 25px;
 }
 
 .active-item {
-  color: #fd582f;
+  color: #FD582F;
 }
 
 .intro-section {
   display: flex;
 }
+
 .left-section {
-  padding-top: 40px;
+  padding-top: 30px;
 }
 
 .left-section h3 {
-  font-size: 25px;
-}
-.left-section h1 {
-  font-size: 60px;
-  font-family: "Fredoka one";
+  font-size: 40px;
   font-weight: 400;
 }
+
+.left-section h1 {
+  font-size: 80px;
+  font-family: "Fredoka One";
+  font-weight: 400;
+}
+
 .sub-headlines {
-  padding-top: 10px;
-  padding-left: 70px;
+  padding-top: 30px;
+  padding-left: 100px;
 }
 
 .sub-headline {
-  font-size: 22px;
-  font-weight: 500;
-  margin-top: 5px;
-}
+  font-size: 30px;
+  font-weight: 400;
+}    
+
 .sub-headline img {
-  background-color: #fd582f;
-  border-radius: 20px;
-}
-.text {
-  padding-top: 30px;
-  margin-right: 100px;
-  font-size: 15px;
-}
-button {
-  margin-top: 30px;
-  padding: 10px 30px;
+  background-color: #FD582D;
+  padding: 5px 5px;
   border-radius: 30px;
-  background-color: #fd582f;
-  color: #ffffff;
-  font-weight: 500;
-  border: none;
+
+  position: relative;
+  top: 9px;
 }
 
-.rigtht-section {
+.text {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+button {
+  background-color: #FE5B32;
+  border: none;
+  color: #FFFFFF;
+  border-radius: 30px;
+  padding: 10px 30px;
+  font-size: 20px;
+}
+
+.right-section {
   position: relative;
 }
-.discount,
-.discount-content {
+
+.discount,.discount-content {
   position: absolute;
-}
-.headphone-div :nth-child(3) {
-  height: 350px;
-  margin-right: 150px;
 }
 
 .discount {
-  height: 130px;
-  top: 380px;
-  right: 440px;
+  top: 270px;
+  left: -35px;
+
+  height: 150px;
 }
 
 .discount-content {
-  top: 415px;
-  right: 470px;
+  top: 300px;
+  left: -5px;
 }
+
 .discount-content h1 {
-  font-family: "fredoka one ";
-  color: #ffffff;
-  font-weight: 900;
-  font-size: 35px;
+  font-family: "Fredoka One";
+  color: #FFFFFF;
+  font-size: 50px;
 }
+
 .discount-content h4 {
-  color: #ffffff;
-  font-weight: 400;
+  color: #FFFFFF;
+  font-size: 14px;
+  
+  position: relative;
+  top: 5px;
+  left: 10px;
 }
 
 .dots {
-  position: absolute;
   display: flex;
   justify-content: center;
-
-  bottom: 120px;
-  right: 330px;
-  gap: 20px;
+  gap: 20px
 }
+
 .dot {
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   border-radius: 20px;
 }
 
 .yellow-dot {
-  content: linear-gradient(#fbd104, #fbd104);
+  content: linear-gradient(#FBD104, #FBD104);
 }
 
 .tomato-dot {
-  content: linear-gradient(#fe5e35, #fe5e35);
+  content:  linear-gradient(#FE5E35, #FE5E35)
 }
 
 .black-dot {
-  content: linear-gradient(#000000, #000000);
+  content:  linear-gradient(#000000,#000000)
 }
-.right-section button {
-  position: absolute;
-  bottom: 0px;
-  right: 307px;
-  margin-bottom: 40px;
+
+.headset {
+  height: 500px;
+}
+
+@media (max-width: 430px) {
+  
+  body > nav:nth-child(1) > img:nth-child(3) {
+      display: none;
+  }
+
+  body {
+      margin: 10px 15px;
+  }
+
+  .nav-items {
+      display: none;
+  }
+
+  .intro-section {
+      display: flex;
+      flex-direction: column;
+      gap: 70px;
+  }
+
+  .left-section h3 {
+      font-size: 30px;
+  }
+
+  .left-section h3 img {
+      width: 40px
+  }
+
+  .left-section h1 {
+      font-size: 60px;
+  }
+
+  .sub-headlines {
+      padding: 0;
+      padding-top: 50px;
+  }
+
+  .discount {
+      width: 95px;
+      height: auto;
+
+      left: 10px;
+  }
+
+  .discount-content {
+      top: 290px;
+      left: 30px;
+  }
+
+  .discount-content h4{
+      font-size: 7px;
+  }
+
+  .discount-content h1 {
+      font-size: 30px;
+  }
+
+  .headset {
+      width: 400px;
+      height: auto;
+  }
+
+  button.action-btn:nth-child(3) {
+      margin-top: 50px;
+      margin-left: 25%;
+  }
 }
